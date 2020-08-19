@@ -564,6 +564,7 @@ svg {
   background-size: contain;
 }
 #note-text {
+  background-color: white;
   margin: 0;
   padding: 9%;
   border: 2px dashed var(--darkest-blue-color);
