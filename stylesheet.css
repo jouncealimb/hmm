@@ -841,19 +841,7 @@ input[type="number"] {
 }
 
 #padlock2 .unlocked {
-  fill: var(--pink-color);
-}
-
-#padlock4 .unlocked {
   fill: var(--palest-blue-color);
-}
-
-#padlock3 .unlocked {
-  fill: var(--dark-magenta-color);
-}
-
-#padlock5 .unlocked {
-  fill: var(--bright-blue-color);
 }
 
 .unlocked {
@@ -886,3 +874,22 @@ input[type="number"] {
 }
 
 // make font responsive
+
+.pop {
+    display: block;
+    margin: 0.8rem 0;
+    padding: 0.5rem 1rem;
+    width: 4rem;
+    height: 2rem;
+    background: black;
+    color: rgb(19, 216, 19);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px greenyellow;
+}
+
+.pop:active {
+    box-shadow: 0 1px red;
+    transform: translateY(3px);
+}
