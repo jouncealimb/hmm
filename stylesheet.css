@@ -9,7 +9,6 @@ Objects in the Room
 #computer
 #desk
 #servers
-#poster
 #radiator
 #mirror
 #plant
@@ -555,7 +554,7 @@ svg {
   cursor: grabbing;
 }
 
-#mirror-puzzle-container #mmirror {
+#mirror-puzzle-container #mirror {
   width: 500px;
   height: 500px;
   padding: 5%;
