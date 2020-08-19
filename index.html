@@ -1369,186 +1369,186 @@ document
 // MODAL
 
 // Get the modal
-var puzzlerModal = document.getElementById("puzzlerModal");
+// var puzzlerModal = document.getElementById("puzzlerModal");
 
-// Get the button that opens the modal
-var puzzlerBtn = document.getElementById("puzzlerBtn");
+// // Get the button that opens the modal
+// var puzzlerBtn = document.getElementById("puzzlerBtn");
 
-// Get the <span> element that closes the modal
-var closePuzzler = document.getElementsByClassName("close-puzzler")[0];
+// // Get the <span> element that closes the modal
+// // var closePuzzler = document.getElementsByClassName("close-puzzler")[0];
 
-// When the user clicks the button, open the modal
-puzzlerBtn.onclick = function() {
-  puzzlerModal.style.display = "grid";
-};
+// // When the user clicks the button, open the modal
+// puzzlerBtn.onclick = function() {
+//   puzzlerModal.style.display = "grid";
+// };
 
-// When the user clicks on <span> (x), close the modal and check whether all puzzles solved
-closePuzzler.onclick = function() {
-  puzzlerModal.style.display = "none";
-  verify();
-};
+// // When the user clicks on <span> (x), close the modal and check whether all puzzles solved
+// closePuzzler.onclick = function() {
+//   puzzlerModal.style.display = "none";
+//   verify();
+// };
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == puzzlerModal) {
-    puzzlerModal.style.display = "none";
-  }
-};
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == puzzlerModal) {
+//     puzzlerModal.style.display = "none";
+//   }
+// };
 
 // END MODAL
 
 // Start JS for Puzzler Puzzler
-!(function(a) {
-  function f(a, b) {
-    if (!(a.originalEvent.touches.length > 1)) {
-      a.preventDefault();
-      var c = a.originalEvent.changedTouches[0],
-        d = document.createEvent("MouseEvents");
-      d.initMouseEvent(
-        b,
-        !0,
-        !0,
-        window,
-        1,
-        c.screenX,
-        c.screenY,
-        c.clientX,
-        c.clientY,
-        !1,
-        !1,
-        !1,
-        !1,
-        0,
-        null
-      ),
-        a.target.dispatchEvent(d);
-    }
-  }
-  if (((a.support.touch = "ontouchend" in document), a.support.touch)) {
-    var e,
-      b = a.ui.mouse.prototype,
-      c = b._mouseInit,
-      d = b._mouseDestroy;
-    (b._touchStart = function(a) {
-      var b = this;
-      !e &&
-        b._mouseCapture(a.originalEvent.changedTouches[0]) &&
-        ((e = !0),
-        (b._touchMoved = !1),
-        f(a, "mouseover"),
-        f(a, "mousemove"),
-        f(a, "mousedown"));
-    }),
-      (b._touchMove = function(a) {
-        e && ((this._touchMoved = !0), f(a, "mousemove"));
-      }),
-      (b._touchEnd = function(a) {
-        e &&
-          (f(a, "mouseup"),
-          f(a, "mouseout"),
-          this._touchMoved || f(a, "click"),
-          (e = !1));
-      }),
-      (b._mouseInit = function() {
-        var b = this;
-        b.element.bind({
-          touchstart: a.proxy(b, "_touchStart"),
-          touchmove: a.proxy(b, "_touchMove"),
-          touchend: a.proxy(b, "_touchEnd")
-        }),
-          c.call(b);
-      }),
-      (b._mouseDestroy = function() {
-        var b = this;
-        b.element.unbind({
-          touchstart: a.proxy(b, "_touchStart"),
-          touchmove: a.proxy(b, "_touchMove"),
-          touchend: a.proxy(b, "_touchEnd")
-        }),
-          d.call(b);
-      });
-  }
-})(jQuery);
+// !(function(a) {
+//   function f(a, b) {
+//     if (!(a.originalEvent.touches.length > 1)) {
+//       a.preventDefault();
+//       var c = a.originalEvent.changedTouches[0],
+//         d = document.createEvent("MouseEvents");
+//       d.initMouseEvent(
+//         b,
+//         !0,
+//         !0,
+//         window,
+//         1,
+//         c.screenX,
+//         c.screenY,
+//         c.clientX,
+//         c.clientY,
+//         !1,
+//         !1,
+//         !1,
+//         !1,
+//         0,
+//         null
+//       ),
+//         a.target.dispatchEvent(d);
+//     }
+//   }
+//   if (((a.support.touch = "ontouchend" in document), a.support.touch)) {
+//     var e,
+//       b = a.ui.mouse.prototype,
+//       c = b._mouseInit,
+//       d = b._mouseDestroy;
+//     (b._touchStart = function(a) {
+//       var b = this;
+//       !e &&
+//         b._mouseCapture(a.originalEvent.changedTouches[0]) &&
+//         ((e = !0),
+//         (b._touchMoved = !1),
+//         f(a, "mouseover"),
+//         f(a, "mousemove"),
+//         f(a, "mousedown"));
+//     }),
+//       (b._touchMove = function(a) {
+//         e && ((this._touchMoved = !0), f(a, "mousemove"));
+//       }),
+//       (b._touchEnd = function(a) {
+//         e &&
+//           (f(a, "mouseup"),
+//           f(a, "mouseout"),
+//           this._touchMoved || f(a, "click"),
+//           (e = !1));
+//       }),
+//       (b._mouseInit = function() {
+//         var b = this;
+//         b.element.bind({
+//           touchstart: a.proxy(b, "_touchStart"),
+//           touchmove: a.proxy(b, "_touchMove"),
+//           touchend: a.proxy(b, "_touchEnd")
+//         }),
+//           c.call(b);
+//       }),
+//       (b._mouseDestroy = function() {
+//         var b = this;
+//         b.element.unbind({
+//           touchstart: a.proxy(b, "_touchStart"),
+//           touchmove: a.proxy(b, "_touchMove"),
+//           touchend: a.proxy(b, "_touchEnd")
+//         }),
+//           d.call(b);
+//       });
+//   }
+// })(jQuery);
 
-/* *** end jQuery UI Touch Punch *** */
+// /* *** end jQuery UI Touch Punch *** */
 
-var tileArr = [];
-var ansID = ["6", "8", "1", "2", "7", "4", "3", "5"];
-var droppedID = [0, 0, 0, 0, 0, 0, 0, 0];
-var dragThis = 0;
-var dropThis = 0;
-$(document).ready(function() {
-  $(".tile").each(function() {
-    $(this).draggable({
-      drag: function(event, ui) {
-        dragThis = $(this).attr("id");
-        console.log(droppedID);
-      }
-    });
-  });
-  $(".blank").each(function() {
-    $(this).droppable({
-      drop: function(event, ui) {
-        $(this).addClass("ui-state-highlight");
-        dropThis =
-          $(this)
-            .attr("id")
-            .substring(2, 1) - 1;
-        droppedID[dropThis] = dragThis;
-      },
-      out: function(event, ui) {
-        $(this).removeClass("ui-state-highlight");
-        droppedID[dropThis] = 0;
-      }
-    });
-  });
+// var tileArr = [];
+// var ansID = ["6", "8", "1", "2", "7", "4", "3", "5"];
+// var droppedID = [0, 0, 0, 0, 0, 0, 0, 0];
+// var dragThis = 0;
+// var dropThis = 0;
+// $(document).ready(function() {
+//   $(".tile").each(function() {
+//     $(this).draggable({
+//       drag: function(event, ui) {
+//         dragThis = $(this).attr("id");
+//         console.log(droppedID);
+//       }
+//     });
+//   });
+//   $(".blank").each(function() {
+//     $(this).droppable({
+//       drop: function(event, ui) {
+//         $(this).addClass("ui-state-highlight");
+//         dropThis =
+//           $(this)
+//             .attr("id")
+//             .substring(2, 1) - 1;
+//         droppedID[dropThis] = dragThis;
+//       },
+//       out: function(event, ui) {
+//         $(this).removeClass("ui-state-highlight");
+//         droppedID[dropThis] = 0;
+//       }
+//     });
+//   });
 
-  $("button").click(function() {
-    var c = 0;
-    $(".blank").each(function(obj, value) {
-      if ($(this).hasClass("ui-state-highlight")) {
-        //do nothing
-      } else {
-        c++;
-      }
-    });
-    if (c > 0) {
-      $("#alert").html("Please place all tiles!");
-    } else {
-      var w = 0;
-      $.each(ansID, function(obj, value) {
-        if (value == droppedID[obj]) {
-          w++;
-        }
+//   $("button").click(function() {
+//     var c = 0;
+//     $(".blank").each(function(obj, value) {
+//       if ($(this).hasClass("ui-state-highlight")) {
+//         //do nothing
+//       } else {
+//         c++;
+//       }
+//     });
+//     if (c > 0) {
+//       $("#alert").html("Please place all tiles!");
+//     } else {
+//       var w = 0;
+//       $.each(ansID, function(obj, value) {
+//         if (value == droppedID[obj]) {
+//           w++;
+//         }
 
-        if (w == 8) {
-          puzzlerSolved = true;
-          $("#alert").html("You solved it!");
+//         if (w == 8) {
+//           puzzlerSolved = true;
+//           $("#alert").html("You solved it!");
 
-          //unlock 1st padlock once puzzle is solved
-          // checkPadlocks('padlock0',puzzlerSolved);
-          // document.querySelector('.unlocked').setAttribute('fill', "#22a0b6");
-          document.querySelector("#padlock0 .locked").style.opacity = "0";
-          document.querySelector("#padlock0 .unlocked").style.opacity = "1";
-          //$("#alert").html(`You win! ${puzzlerSolved}`);
-          //console.log(puzzlerSolved); //done- trigger worked
-        } else {
-          $("#alert").html("Sorry please try again!");
-          puzzlerSolved = false;
-        }
+//           //unlock 1st padlock once puzzle is solved
+//           // checkPadlocks('padlock0',puzzlerSolved);
+//           // document.querySelector('.unlocked').setAttribute('fill', "#22a0b6");
+//           document.querySelector("#padlock0 .locked").style.opacity = "0";
+//           document.querySelector("#padlock0 .unlocked").style.opacity = "1";
+//           //$("#alert").html(`You win! ${puzzlerSolved}`);
+//           //console.log(puzzlerSolved); //done- trigger worked
+//         } else {
+//           $("#alert").html("Sorry please try again!");
+//           puzzlerSolved = false;
+//         }
 
-        //unlock 1st padlock once puzzle is solved
-        // puzzlerSolved= true;
-        // checkPadlocks('padlock0',puzzlerSolved);
-      });
-    }
-  });
-});
+//         //unlock 1st padlock once puzzle is solved
+//         // puzzlerSolved= true;
+//         // checkPadlocks('padlock0',puzzlerSolved);
+//       });
+//     }
+//   });
+// });
 // End JS for Puzzler Puzzle
 
-document.querySelector(".revealtext").onclick = function() {
-  document.querySelector(".revealtext").style.backgroundColor = "transparent";
-};
+// document.querySelector(".revealtext").onclick = function() {
+//   document.querySelector(".revealtext").style.backgroundColor = "transparent";
+// };
 
 // End Cheryl Velez - Puzzler
 
