@@ -79,7 +79,7 @@
       <div id="note">
         <p id="note-text" class="mirror-text">"Scraps of code drifting around the network can congeal into pools of data. Within this primordial soup. the code breaks, re-assembles, mutates. Evolves."</p>
       </div>
-      <div id="mmirror"></div>
+      <div id="mirror"></div>
 
     </div>
     <!--  end mirror puzzle container    -->
@@ -108,12 +108,11 @@
 
       <div id="app">
         <h1>Find the Code in the Google Drive Photo Stack</h1>
-        <div v-if="won">
+        <div>
           <h1>Oh no, I dropped a CODE NUMBER into this giant zip of photos. Help me find it!</h1>
-          <br><a style="color: black" href="https://drive.google.com/drive/folders/1WkRsRw2cxMrafbjvuGTI9FcS2PYe-awb?usp=sharing" target="_blank">Dive into the stack here and then come back.</a>
+          <br><a style="color: white" href="https://drive.google.com/drive/folders/1WkRsRw2cxMrafbjvuGTI9FcS2PYe-awb?usp=sharing" target="_blank">Dive into the stack here and then come back.</a>
           <p><input type="text" name="code" id="code" pattern="[0-9,]+" placeholder="Enter code here"></p>
-            <button class="pop">ENTER</button>
-            <br><div class="popped">Did it work?</div>
+          <br><div style="color: white" class="popped"></div>
         </div>
         <thing v-else :data="root" :cb="cb"></thing>
       </div>
@@ -1357,7 +1356,7 @@ $(function() {
   $("#mmirror").droppable({
     drop: function(event, ui) {
       $("#note-text").removeClass("mirror-text");
-      $("#note-text").textContent.append('GET OUT OF HERE BEFORE IT IS TOO LATE.');
+      $("#note-text").textContent.replaceWith('GET OUT OF HERE BEFORE IT IS TOO LATE.');
 
       $("#mirror-clue").replaceWith("<p>Ah, there we go. It's a love note. Terrifying.</p>");
 
@@ -1442,7 +1441,7 @@ function checkKey() {
     }
     
     if (clean !== '1105') {
-       popped.textContent = 'You absolute fool. You dumb idiot. Try again.';
+       popped.textContent = 'Beep... Beep...';
     }
     else {
         popped.textContent = 'THAT IS IT!';
