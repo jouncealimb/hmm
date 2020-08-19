@@ -1468,6 +1468,9 @@ function escapeNow() {
 
 // Checks whether player has solved all puzzles, if yes, escape!
 function verify() {
+
+  console.log("verifying", mathPuzzleSolved, mirrorPuzzleSolved, recursionPuzzleSolved);
+
   if (
     mathPuzzleSolved == true &&
     mirrorPuzzleSolved == true &&
