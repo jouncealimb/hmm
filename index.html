@@ -995,12 +995,12 @@ function posterToOpaque() {
   toOpacity("#poster", "1");
 }
 
-document
-  .getElementById("shoePuzzleBtn")
-  .addEventListener("mouseover", abacusToColor);
-document
-  .getElementById("shoePuzzleBtn")
-  .addEventListener("mouseout", abacusToWhite);
+// document
+//   .getElementById("shoePuzzleBtn")
+//   .addEventListener("mouseover", abacusToColor);
+// document
+//   .getElementById("shoePuzzleBtn")
+//   .addEventListener("mouseout", abacusToWhite);
 document
   .getElementById("mirrorPuzzleBtn")
   .addEventListener("mouseover", mirrorToColor);
@@ -1013,6 +1013,12 @@ document
 document
   .getElementById("recursionPuzzleBtn")
   .addEventListener("mouseout", computerToWhite);
+document
+  .getElementById("flexboxPuzzleBtn")
+  .addEventListener("mouseover", boxToColor);
+document
+  .getElementById("shoepuzzleBtn")
+  .addEventListener("mouseout", boxToWhite);
 
 // End room scene
 
@@ -1026,7 +1032,7 @@ document
 var shoepuzzleModal = document.getElementById("shoepuzzleModal");
 
 // Get the button that opens the modal
-var shoepuzzleBtn = document.getElementById("shoepuzzleBtn");
+var shoepuzzleBtn = document.getElementById("flexboxPuzzleBtn");
 
 // Get the <span> element that closes the modal
 var closeshoepuzzle = document.getElementsByClassName("close-shoepuzzle")[0];
