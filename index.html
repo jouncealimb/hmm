@@ -40,41 +40,34 @@
         <div class="outerflex">
           <div class="topContainer">
             <div class="outerBorder">
-              <div class="tile" id="1"><img src="http://cherylvelez.com/play/tile1.png"></div>
+              <div class="tile" id="1"><img src="http://cherylvelez.com/play/tile1.png"></div> <!--Danica-->
             </div>
             <div class="outerBorder">
-              <div class="tile" id="2"><img src="http://cherylvelez.com/play/tile2.png"></div>
+              <div class="tile" id="2"><img src="http://cherylvelez.com/play/tile3.png"></div> <!--Kristine-->
             </div>
             <div class="outerBorder">
-              <div class="tile" id="3"><img src="http://cherylvelez.com/play/tile3.png"></div>
+              <div class="tile" id="3"><img src="http://cherylvelez.com/play/tile4.png"></div> <!--Sam-->
             </div>
             <div class="outerBorder">
-              <div class="tile" id="4"><img src="http://cherylvelez.com/play/tile4.png"></div>
+              <div class="tile" id="4"><img src="http://cherylvelez.com/play/tile6.png"></div> <!--Andrea-->
             </div>
             <div class="outerBorder">
-              <div class="tile" id="5"><img src="http://cherylvelez.com/play/tile5.png"></div>
+              <div class="tile" id="5"><img src="http://cherylvelez.com/play/tile7.png"></div> <!--Bea-->
             </div>
             <div class="outerBorder">
-              <div class="tile" id="6"><img src="http://cherylvelez.com/play/tile6.png"></div>
-            </div>
-            <div class="outerBorder">
-              <div class="tile" id="7"><img src="http://cherylvelez.com/play/tile7.png"></div>
-            </div>
-            <div class="outerBorder">
-              <div class="tile" id="8"><img src="http://cherylvelez.com/play/tile8.png"></div>
+              <div class="tile" id="6"><img src="http://cherylvelez.com/play/tile8.png"></div> <!--Christina-->
             </div>
           </div>
           <!-- top container -->
   
+          <h3 style="color: white;">The feets:</h1>
           <div class="bottomContainer">
-            <div class="blank" id="christina"> </div><br>Christina
-            <div class="blank" id="danica"> </div><br>Danica
-            <div class="blank" id="kristine"> </div><br>Kristine
-            <div class="blank" id="andrea"> </div><br>Andrea
-            <div class="blank" id="sam"> </div><br>Sam
-            <div class="blank" id="bea"> </div><br>Bea
-            <div class="blank" id="b7"> </div><br>?
-            <div class="blank" id="b8"> </div><br>?
+            <div class="blank" id="b1"> </div><br>Christina
+            <div class="blank" id="b2"> </div><br>Danica
+            <div class="blank" id="b3"> </div><br>Kristine
+            <div class="blank" id="b4"> </div><br>Andrea
+            <div class="blank" id="b5"> </div><br>Sam
+            <div class="blank" id="b6"> </div><br>Bea
   
           </div>
           <!-- bottom container -->
@@ -1131,8 +1124,8 @@ window.onclick = function(event) {
 /* *** end jQuery UI Touch Punch *** */
 
 var tileArr = [];
-var ansID = ["6", "8", "1", "2", "7", "4", "3", "5"];
-var droppedID = [0, 0, 0, 0, 0, 0, 0, 0];
+var ansID = ["6", "1", "2", "4", "3", "5"];
+var droppedID = [0, 0, 0, 0, 0, 0];
 var dragThis = 0;
 var dropThis = 0;
 $(document).ready(function() {
@@ -1186,8 +1179,8 @@ $(document).ready(function() {
           //unlock 1st padlock once puzzle is solved
           // checkPadlocks('padlock0',shoepuzzleSolved);
           // document.querySelector('.unlocked').setAttribute('fill', "#22a0b6");
-          document.querySelector("#padlock0 .locked").style.opacity = "0";
-          document.querySelector("#padlock0 .unlocked").style.opacity = "1";
+          document.querySelector("#padlock1 .locked").style.opacity = "0";
+          document.querySelector("#padlock1 .unlocked").style.opacity = "1";
           //$("#alert").html(`You win! ${shoepuzzleSolved}`);
           //console.log(shoepuzzleSolved); //done- trigger worked
         } else {
