@@ -1353,10 +1353,10 @@ $(function() {
 
 $(function() {
   $("#note").draggable();
-  $("#mmirror").droppable({
+  $("#mirror").droppable({
     drop: function(event, ui) {
       $("#note-text").removeClass("mirror-text");
-    //   $("#note-text").textContent().replaceWith('GET OUT OF HERE BEFORE IT IS TOO LATE.');
+      $("#note-text").textContent().append('BEFORE IT IS TOO LATE FOR YOU.');
 
       $("#mirror-clue").replaceWith("<p>Ah, there we go. It's a love note. Terrifying.</p>");
 
