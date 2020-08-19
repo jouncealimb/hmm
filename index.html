@@ -1171,7 +1171,7 @@ $(document).ready(function() {
           w++;
         }
 
-        if (w == 8) {
+        if (w == 6) {
           shoepuzzleSolved = true;
           $("#alert").html("You solved it!");
 
@@ -1183,7 +1183,7 @@ $(document).ready(function() {
           //$("#alert").html(`You win! ${shoepuzzleSolved}`);
           //console.log(shoepuzzleSolved); //done- trigger worked
         } else {
-          $("#alert").html("Sorry please try again!");
+          $("#alert").html("Sorry, the shoes don't fit!");
           shoepuzzleSolved = false;
         }
 
