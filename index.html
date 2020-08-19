@@ -62,12 +62,12 @@
   
           <h3 style="color: white;">The feets:</h1>
           <div class="bottomContainer">
-            <div class="blank" id="b1"> </div><br style="color: white;">Christina
-            <div class="blank" id="b2"> </div><br style="color: white;">Danica
-            <div class="blank" id="b3"> </div><br style="color: white;">Kristine
-            <div class="blank" id="b4"> </div><br style="color: white;">Andrea
-            <div class="blank" id="b5"> </div><br style="color: white;">Sam
-            <div class="blank" id="b6"> </div><br style="color: white;">Bea
+            <div class="blank" id="b1"> </div><div style="color: white;">Christina</div>
+            <div class="blank" id="b2"> </div><div style="color: white;">Danica</div>
+            <div class="blank" id="b3"> </div><div style="color: white;">Kristine</div>
+            <div class="blank" id="b4"> </div><div style="color: white;">Andrea</div>
+            <div class="blank" id="b5"> </div><div style="color: white;">Sam</div>
+            <div class="blank" id="b6"> </div><div style="color: white;">Bea</div>
           </div>
           <!-- bottom container -->
         </div>
@@ -1132,7 +1132,7 @@ $(document).ready(function() {
     $(this).draggable({
       drag: function(event, ui) {
         dragThis = $(this).attr("id");
-        console.log(droppedID);
+        // console.log(droppedID);
       }
     });
   });
@@ -1167,6 +1167,7 @@ $(document).ready(function() {
     } else {
       var w = 0;
       $.each(ansID, function(obj, value) {
+        console.log("checking", value, droppedId[obj]);
         if (value == droppedID[obj]) {
           w++;
         }
