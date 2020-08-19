@@ -109,9 +109,9 @@
       <div id="app">
         <h1>Find the Code in the Google Drive Photo Stack</h1>
         <div>
-          <h1>Oh no, I dropped a CODE NUMBER into this giant zip of photos. Help me find it!</h1>
+          <h1>Oh no, I dropped a CODE WORD into this giant zip of photos. "Where should we meet?"</h1>
           <br><a style="color: white" href="https://drive.google.com/drive/folders/1WkRsRw2cxMrafbjvuGTI9FcS2PYe-awb?usp=sharing" target="_blank">Dive into the stack here and then come back.</a>
-          <p><input type="text" name="code" id="code" pattern="[0-9,]+" placeholder="Enter code here"></p>
+          <p><input type="text" name="code" id="code" placeholder="Enter code here"></p>
           <br><div style="color: white" class="popped"></div>
         </div>
         <thing v-else :data="root" :cb="cb"></thing>
@@ -1433,18 +1433,11 @@ popIt.onclick = displayResult;
 
 
 function checkKey() {
-    let clean = this.value.replace(/^[,]|[^0-9,]/g, "");
-
-    if (clean !== this.value) {
-        popped.textContent = `You have entered air. Do not do that.`;
-        this.value = clean;
-    }
-    
-    if (clean !== '1105') {
+    if (toLowercase(this.value) !== 'hallway') {
        popped.textContent = 'Beep... Beep...';
     }
     else {
-        popped.textContent = 'THAT IS IT!';
+        popped.textContent = 'THAT IS IT! You solved it. You can close this window now.';
         recursionPuzzleSolved = true;
 
         document.querySelector("#padlock0 .locked").style.opacity = "0";
@@ -1476,7 +1469,6 @@ function verify() {
     mirrorPuzzleSolved == true &&
     recursionPuzzleSolved == true
   ) {
-    ESCAPE
 
     escapeNow();
   }
