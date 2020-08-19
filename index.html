@@ -10,7 +10,7 @@
 
 <div id="escaped">
   <h2 style="font-size: 100px;">YOUTH: ESCAPED!</h2>
-  <div style="color: white; background-color: black; margin: auto; padding: 20px;">Dennison, there is a lot more I want to say to you, offline <br>and a lot more conversations we still need to have <br>that both of us probably still need to process. <br>But I'm grateful you're still in my life <br>being yourself as you.. are. <br>Have a birthday, happy. Love, Danica.</div>
+  <div style="color: white; background-color: black; margin: auto; padding: 20px;">Dennison, there is a lot more I want to say to you, offline <br>and a lot more conversations we still need to have <br>that both of us probably still need to process. <br>But I'm grateful you're still in my life <br>being yourself as you.. are. I love causal convos with you and Post-Chocolate show discussions.<br>Have a birthday, happy. Love, Danica.</div>
 </div>
 
 <!-------  Cheryl Velez - shoepuzzle   -------- >
@@ -34,7 +34,7 @@
           </div>
         </div>
         <p class="quote">You stole a bunch of your friends' shoes, and now that they've visited the boys' bathroom, you have to give them back! Now if only you remembered which shoe is whose... </p>
-        <p class="quote">Note that the tiles must turn red and fully cover the text of the names to be counted successfully.</p>
+        <p class="quote">Note that the tiles must turn red and fully cover the text of the names to be counted successfully. You may need to readjust them until they're fully centered, because I suck.</p>
 
         <div id="btn-container"><button>Submit Answer</button>
         </div>
@@ -898,7 +898,7 @@
 
 // These variables set to true when player solves puzzle:
 // Please comment here with ✅ as triggers are added to puzzles:
-var shoepuzzleSolved = false; // ✅
+var shoePuzzleSolved = false; // ✅
 var mirrorPuzzleSolved = false; // ✅
 var recursionPuzzleSolved = false; // ✅
 
@@ -1174,7 +1174,7 @@ $(document).ready(function() {
         }
 
         if (w == 6) {
-          shoepuzzleSolved = true;
+          shoePuzzleSolved = true;
           $("#alert").html("You solved it! Happy Feet! You can close this now.");
 
           //unlock 1st padlock once puzzle is solved
@@ -1348,10 +1348,10 @@ function escapeNow() {
 // Checks whether player has solved all puzzles, if yes, escape!
 function verify() {
 
-  console.log("verifying", shoepuzzleSolved, mirrorPuzzleSolved, recursionPuzzleSolved);
+  console.log("verifying", shoePuzzleSolved, mirrorPuzzleSolved, recursionPuzzleSolved);
 
   if (
-    shoepuzzleSolved == true &&
+    shoePuzzleSolved == true &&
     mirrorPuzzleSolved == true &&
     recursionPuzzleSolved == true
   ) {
