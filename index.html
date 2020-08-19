@@ -75,7 +75,7 @@
     <!--   Mirror Puzzle Container   -->
     <!--  PUZZLE GOES INSIDE HERE   -->
     <div id="mirror-puzzle-container" style="background: black;">
-      <p id="mirror-clue">Hmm, I found this anonymous, cryptic note stuffed into my locker. <br>What am I supposed to do with this?</p>
+      <p id="mirror-clue">Oh that? I found this anonymous, cryptic note stuffed into my locker earlier today. <br>What am I supposed to do with this?</p>
       <div id="note">
         <p id="note-text" class="mirror-text">"My sweet, sweet love, I long to see you. So, please make your way to me."</p>
       </div>
@@ -1356,7 +1356,7 @@ $(function() {
   $("#mirror").droppable({
     drop: function(event, ui) {
       $("#note-text").removeClass("mirror-text");
-      $("#note-text").textContent().append('BEFORE IT IS TOO LATE FOR YOU.');
+      $("#note-text").textContent().append('BEFORE IT IS TOO LATE FOR YOU. TICK TOCK, BITCH.');
 
       $("#mirror-clue").replaceWith("<p>Ah, there we go. It's a love note. Terrifying.</p>");
 
