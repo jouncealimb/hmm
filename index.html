@@ -13,57 +13,86 @@
   <div style="color: white; background-color: black; margin: auto; padding: 20px;">Dennison, there is a lot more I want to say to you, offline <br>and a lot more conversations we still need to have <br>that both of us probably still need to process. <br>But I'm grateful you're still in my life <br>being yourself as you.. are. <br>Have a birthday, happy. Love, Danica.</div>
 </div>
 
-<!------- End Cheryl Velez - Puzzler ------- >
+<!-------  Cheryl Velez - shoepuzzle   -------- >
 
-<!-- Dominic Duffin - Math Puzzle  -->
+<!-- Trigger/Open The Modal -->
+<!-- <button id="shoepuzzleBtn">Open Cheryls Puzzle</button> -->
 
 <!-- The Modal -->
-<div id="mathPuzzleModal" class="modal">
+<div id="shoepuzzleModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close close-mathpuzzle">&times;</span>
-
-    <!--   Math Puzzle Container   -->
-    <!--  PUZZLE GOES INSIDE HERE   -->
-    <div id="math-puzzle-container">
-      <div id="math-puzzle-main">
-        <div id="math-puzzle-keypad">
-          <button type="button" class="math-puzzle-numberButton" id="math-puzzle-one">1</button>
-          <button type="button" class="math-puzzle-numberButton" id="math-puzzle-two">2</button>
-          <button type="button" class="math-puzzle-numberButton" id="math-puzzle-three">3</button>
-          <button type="button" class="math-puzzle-numberButton" id="math-puzzle-four">4</button>
-          <button type="button" class="math-puzzle-numberButton" id="math-puzzle-five">5</button>
-          <button type="button" class="math-puzzle-numberButton" id="math-puzzle-six">6</button>
-          <button type="button" class="math-puzzle-numberButton" id="math-puzzle-seven">7</button>
-          <button type="button" class="math-puzzle-numberButton" id="math-puzzle-eight">8</button>
-          <button type="button" class="math-puzzle-numberButton" id="math-puzzle-nine">9</button>
-          <button type="button" class="math-puzzle-zeroButton" id="math-puzzle-zero">0</button>
-          <button type="button" class="math-puzzle-signButton" id="math-puzzle-plus">+</button>
-          <button type="button" class="math-puzzle-signButton" id="math-puzzle-minus">-</button>
-        </div>
-        <div id="math-puzzle-sum">
-          <div class="math-puzzle-position" id="math-puzzle-message">
-            Make the sum add up!
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close close-shoepuzzle">&times;</span>
+  
+      <!-- shoepuzzle container   -->
+      <div id="shoepuzzle-container">
+  
+        <div class="content">
+          <div>
+            <p id="alert"></p>
           </div>
-          <div class="math-puzzle-position" id="math-puzzle-a">Number</div>
-          <div class="math-puzzle-position" id="math-puzzle-b">Sign</div>
-          <div class="math-puzzle-position" id="math-puzzle-c">Number</div>
-          <div class="math-puzzle-position" id="math-puzzle-d">Sign</div>
-          <div class="math-puzzle-position" id="math-puzzle-e">Number</div>
-          <div class="math-puzzle-position" id="math-puzzle-f">=</div>
-          <div class="math-puzzle-position" id="math-puzzle-g">Number</div>
         </div>
+        <p class="quote">"The person who masters himself through self-control and discipline is truly undefeatable." -Buddha</p><br><br>
+        <p class="quote">Directions: Solve the riddle of the runes: the tiles are all out of order. <br>Can you figure out their correct order?<br>Drag and drop the tiles into the empty boxes in the correct order. <br> Hint: When placing a tile, do not hover over boxes
+          you've already filled or are going to fill! <br><span class="bighint">Bigger Hint: </span><span class="revealtext">Use the console to watch for changes in the array!</span> </p>
+  
+        <div id="btn-container"><button>Submit Answer</button>
+        </div>
+        <div class="outerflex">
+          <div class="topContainer">
+            <div class="outerBorder">
+              <div class="tile" id="1"><img src="http://cherylvelez.com/play/tile1.png"></div>
+            </div>
+            <div class="outerBorder">
+              <div class="tile" id="2"><img src="http://cherylvelez.com/play/tile2.png"></div>
+            </div>
+            <div class="outerBorder">
+              <div class="tile" id="3"><img src="http://cherylvelez.com/play/tile3.png"></div>
+            </div>
+            <div class="outerBorder">
+              <div class="tile" id="4"><img src="http://cherylvelez.com/play/tile4.png"></div>
+            </div>
+            <div class="outerBorder">
+              <div class="tile" id="5"><img src="http://cherylvelez.com/play/tile5.png"></div>
+            </div>
+            <div class="outerBorder">
+              <div class="tile" id="6"><img src="http://cherylvelez.com/play/tile6.png"></div>
+            </div>
+            <div class="outerBorder">
+              <div class="tile" id="7"><img src="http://cherylvelez.com/play/tile7.png"></div>
+            </div>
+            <div class="outerBorder">
+              <div class="tile" id="8"><img src="http://cherylvelez.com/play/tile8.png"></div>
+            </div>
+          </div>
+          <!-- top container -->
+  
+          <div class="bottomContainer">
+            <div class="blank" id="b1"> </div>
+            <div class="blank" id="b2"> </div>
+            <div class="blank" id="b3"> </div>
+            <div class="blank" id="b4"> </div>
+            <div class="blank" id="b5"> </div>
+            <div class="blank" id="b6"> </div>
+            <div class="blank" id="b7"> </div>
+            <div class="blank" id="b8"> </div>
+  
+          </div>
+          <!-- bottom container -->
+        </div>
+        <!-- outer container -->
+  
       </div>
-
+      <!--  end shoepuzzle container    -->
+  
     </div>
-    <!--  end math puzzle container    -->
-
+    <!-- end modal content   -->
+  
   </div>
-  <!-- end modal content   -->
-
-</div>
-<!-- end modal  -->
+  <!-- end modal -->
+  
+  <!------- End Cheryl Velez - shoepuzzle ------- >
 
 <!-- The Modal -->
 <div id="mirrorPuzzleModal" class="modal">
@@ -836,8 +865,8 @@
 		v-0.4h0.5V62.2z M217.4,61.5h-0.5v-0.4h0.5V61.5z M217.4,60.7h-0.5v-0.4h0.5V60.7z M217.4,60h-0.5v-0.4h0.5V60z" />
 </g>
 <rect id="flexboxPuzzleBtn" x="2.5" y="88.5" class="st2" width="16" height="14" />
-<rect id="mathPuzzleBtn" x="135" y="55" class="st2" width="16" height="10" />
-<rect id="puzzlerBtn" x="120.4" y="11" class="st2" width="5.1" height="5" />
+<rect id="shoePuzzleBtn" x="135" y="55" class="st2" width="16" height="10" />
+<rect id="shoepuzzleBtn" x="120.4" y="11" class="st2" width="5.1" height="5" />
 <rect id="recursionPuzzleBtn" x="156" y="34.8" class="st2" width="34" height="23.5" />
 <rect id="pipePuzzleBtn" x="269" y="75" class="st2" width="30" height="30" />
 <g id="open-door" class="st3">
@@ -878,7 +907,7 @@
 
 // These variables set to true when player solves puzzle:
 // Please comment here with ✅ as triggers are added to puzzles:
-var mathPuzzleSolved = false; // ✅
+var shoePuzzleSolved = false; // ✅
 var mirrorPuzzleSolved = false; // ✅
 var recursionPuzzleSolved = false; // ✅
 
@@ -967,10 +996,10 @@ function posterToOpaque() {
 }
 
 document
-  .getElementById("mathPuzzleBtn")
+  .getElementById("shoePuzzleBtn")
   .addEventListener("mouseover", abacusToColor);
 document
-  .getElementById("mathPuzzleBtn")
+  .getElementById("shoePuzzleBtn")
   .addEventListener("mouseout", abacusToWhite);
 document
   .getElementById("mirrorPuzzleBtn")
@@ -987,332 +1016,520 @@ document
 
 // End room scene
 
-// Dominic Duffin - Math Puzzle
+// Dominic Duffin - shoe Puzzle
+
+// Cheryl Velez - shoepuzzle
+
+// MODAL
 
 // Get the modal
-var mathPuzzleModal = document.getElementById("mathPuzzleModal");
+var shoepuzzleModal = document.getElementById("shoepuzzleModal");
 
 // Get the button that opens the modal
-var mathPuzzleBtn = document.getElementById("mathPuzzleBtn");
+var shoepuzzleBtn = document.getElementById("shoepuzzleBtn");
 
 // Get the <span> element that closes the modal
-var closeMathPuzzle = document.getElementsByClassName("close-mathpuzzle")[0];
+var closeshoepuzzle = document.getElementsByClassName("close-shoepuzzle")[0];
 
 // When the user clicks the button, open the modal
-mathPuzzleBtn.onclick = function() {
-  mathPuzzleModal.style.display = "grid";
+shoepuzzleBtn.onclick = function() {
+  shoepuzzleModal.style.display = "grid";
 };
 
 // When the user clicks on <span> (x), close the modal and check whether all puzzles solved
-closeMathPuzzle.onclick = function() {
-  mathPuzzleModal.style.display = "none";
+closeshoepuzzle.onclick = function() {
+  shoepuzzleModal.style.display = "none";
   verify();
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == mathPuzzleModal) {
-    mathPuzzleModal.style.display = "none";
+  if (event.target == shoepuzzleModal) {
+    shoepuzzleModal.style.display = "none";
   }
 };
 
-// Begin Math Puzzle JavaScript (not modal)
+// END MODAL
 
-// TODO Replace window.alerts with something else!
+// Start JS for shoepuzzle shoepuzzle
+!(function(a) {
+  function f(a, b) {
+    if (!(a.originalEvent.touches.length > 1)) {
+      a.preventDefault();
+      var c = a.originalEvent.changedTouches[0],
+        d = document.createEvent("MouseEvents");
+      d.initMouseEvent(
+        b,
+        !0,
+        !0,
+        window,
+        1,
+        c.screenX,
+        c.screenY,
+        c.clientX,
+        c.clientY,
+        !1,
+        !1,
+        !1,
+        !1,
+        0,
+        null
+      ),
+        a.target.dispatchEvent(d);
+    }
+  }
+  if (((a.support.touch = "ontouchend" in document), a.support.touch)) {
+    var e,
+      b = a.ui.mouse.prototype,
+      c = b._mouseInit,
+      d = b._mouseDestroy;
+    (b._touchStart = function(a) {
+      var b = this;
+      !e &&
+        b._mouseCapture(a.originalEvent.changedTouches[0]) &&
+        ((e = !0),
+        (b._touchMoved = !1),
+        f(a, "mouseover"),
+        f(a, "mousemove"),
+        f(a, "mousedown"));
+    }),
+      (b._touchMove = function(a) {
+        e && ((this._touchMoved = !0), f(a, "mousemove"));
+      }),
+      (b._touchEnd = function(a) {
+        e &&
+          (f(a, "mouseup"),
+          f(a, "mouseout"),
+          this._touchMoved || f(a, "click"),
+          (e = !1));
+      }),
+      (b._mouseInit = function() {
+        var b = this;
+        b.element.bind({
+          touchstart: a.proxy(b, "_touchStart"),
+          touchmove: a.proxy(b, "_touchMove"),
+          touchend: a.proxy(b, "_touchEnd")
+        }),
+          c.call(b);
+      }),
+      (b._mouseDestroy = function() {
+        var b = this;
+        b.element.unbind({
+          touchstart: a.proxy(b, "_touchStart"),
+          touchmove: a.proxy(b, "_touchMove"),
+          touchend: a.proxy(b, "_touchEnd")
+        }),
+          d.call(b);
+      });
+  }
+})(jQuery);
 
-var positionA; //A-G store value assigned to positions in sum
-var positionB;
-var positionC;
-var positionD;
-var positionE; //F doesn't exist because = is hard wired for F.
-var positionG;
-var choice; //Stores value of button last pressed by user
-var bPlus = true; //Switch to false if user selects minus for B
-var dPlus = true; //Switch to false if user selects minus for D
-var sumTotal; //Stores correct sum for comparison with final position
+/* *** end jQuery UI Touch Punch *** */
 
-//Messages:
-function invalidMessage() {
-  document.getElementById("math-puzzle-message").innerHTML =
-    "Sorry, your choice is invalid!";
-}
+var tileArr = [];
+var ansID = ["6", "8", "1", "2", "7", "4", "3", "5"];
+var droppedID = [0, 0, 0, 0, 0, 0, 0, 0];
+var dragThis = 0;
+var dropThis = 0;
+$(document).ready(function() {
+  $(".tile").each(function() {
+    $(this).draggable({
+      drag: function(event, ui) {
+        dragThis = $(this).attr("id");
+        console.log(droppedID);
+      }
+    });
+  });
+  $(".blank").each(function() {
+    $(this).droppable({
+      drop: function(event, ui) {
+        $(this).addClass("ui-state-highlight");
+        dropThis =
+          $(this)
+            .attr("id")
+            .substring(2, 1) - 1;
+        droppedID[dropThis] = dragThis;
+      },
+      out: function(event, ui) {
+        $(this).removeClass("ui-state-highlight");
+        droppedID[dropThis] = 0;
+      }
+    });
+  });
 
-function fullMessage() {
-  document.getElementById("math-puzzle-message").innerHTML =
-    "Sorry, there are no more positions to fill!";
-}
-
-function solvedMessage() {
-  document.getElementById("math-puzzle-message").innerHTML =
-    "Yay, you've solved this one!";
-}
-
-function wrongMessage() {
-  document.getElementById("math-puzzle-message").innerHTML =
-    "Oh no, you got it wrong, better try again!";
-}
-
-function resetMathPuzzle() {
-  positionA = void 0;
-  positionB = void 0;
-  positionC = void 0;
-  positionD = void 0;
-  positionE = void 0;
-  positionG = void 0;
-  document.getElementById("math-puzzle-a").innerHTML = "Number";
-  document.getElementById("math-puzzle-b").innerHTML = "Sign";
-  document.getElementById("math-puzzle-c").innerHTML = "Number";
-  document.getElementById("math-puzzle-d").innerHTML = "Sign";
-  document.getElementById("math-puzzle-e").innerHTML = "Number";
-  document.getElementById("math-puzzle-g").innerHTML = "Number";
-}
-
-function checkNumber(x) {
-  //Returns true if x is a number 0 ≥ x ≤ 9
-  for (var i = 0; i < 10; i++) {
-    if (x == i) {
-      var y = true;
-      i = 10; //To stop loop
+  $("button").click(function() {
+    var c = 0;
+    $(".blank").each(function(obj, value) {
+      if ($(this).hasClass("ui-state-highlight")) {
+        //do nothing
+      } else {
+        c++;
+      }
+    });
+    if (c > 0) {
+      $("#alert").html("Please place all tiles!");
     } else {
-      var y = false;
+      var w = 0;
+      $.each(ansID, function(obj, value) {
+        if (value == droppedID[obj]) {
+          w++;
+        }
+
+        if (w == 8) {
+          shoepuzzleSolved = true;
+          $("#alert").html("You solved it!");
+
+          //unlock 1st padlock once puzzle is solved
+          // checkPadlocks('padlock0',shoepuzzleSolved);
+          // document.querySelector('.unlocked').setAttribute('fill', "#22a0b6");
+          document.querySelector("#padlock0 .locked").style.opacity = "0";
+          document.querySelector("#padlock0 .unlocked").style.opacity = "1";
+          //$("#alert").html(`You win! ${shoepuzzleSolved}`);
+          //console.log(shoepuzzleSolved); //done- trigger worked
+        } else {
+          $("#alert").html("Sorry please try again!");
+          shoepuzzleSolved = false;
+        }
+
+        //unlock 1st padlock once puzzle is solved
+        // shoepuzzleSolved= true;
+        // checkPadlocks('padlock0',shoepuzzleSolved);
+      });
     }
-  }
-  return y;
-}
+  });
+});
+// End JS for shoepuzzle Puzzle
 
-function checkSign(x) {
-  //Returns true if x is '+' or '-'
-  if (x == "+" || x == "-") {
-    var y = true;
-  } else {
-    var y = false;
-  }
-  return y;
-}
+document.querySelector(".revealtext").onclick = function() {
+  document.querySelector(".revealtext").style.backgroundColor = "transparent";
+};
 
-//The assignPosition functions assign the user's choice to the position's var, after checking for validity.
+// End Cheryl Velez - shoepuzzle
 
-function assignPositionA() {
-  isChoiceValid = checkNumber(choice);
-  if (isChoiceValid == true) {
-    positionA = choice;
-    document.getElementById("math-puzzle-a").innerHTML = choice;
-  } else {
-    invalidMessage();
-  }
-}
+// Get the modal
+// var shoePuzzleModal = document.getElementById("shoePuzzleModal");
 
-function assignPositionB() {
-  isChoiceValid = checkSign(choice);
-  if (isChoiceValid == true) {
-    positionB = choice;
-    document.getElementById("math-puzzle-b").innerHTML = choice;
-    if (choice == "-") {
-      bPlus = false;
-      //console.log(bPlus);
-    }
-  } else {
-    invalidMessage();
-  }
-}
+// // Get the button that opens the modal
+// var shoePuzzleBtn = document.getElementById("shoePuzzleBtn");
 
-function assignPositionC() {
-  isChoiceValid = checkNumber(choice);
-  if (isChoiceValid == true) {
-    positionC = choice;
-    document.getElementById("math-puzzle-c").innerHTML = choice;
-  } else {
-    invalidMessage();
-  }
-}
+// // Get the <span> element that closes the modal
+// var closeshoePuzzle = document.getElementsByClassName("close-shoePuzzle")[0];
 
-function assignPositionD() {
-  isChoiceValid = checkSign(choice);
-  if (isChoiceValid == true) {
-    positionD = choice;
-    document.getElementById("math-puzzle-d").innerHTML = choice;
-    if (choice == "-") {
-      dPlus = false;
-      //console.log(dPlus);
-    }
-  } else {
-    invalidMessage();
-  }
-}
+// // When the user clicks the button, open the modal
+// shoePuzzleBtn.onclick = function() {
+//   shoePuzzleModal.style.display = "grid";
+// };
 
-function assignPositionE() {
-  isChoiceValid = checkNumber(choice);
-  if (isChoiceValid == true) {
-    positionE = choice;
-    document.getElementById("math-puzzle-e").innerHTML = choice;
-  } else {
-    invalidMessage();
-  }
-}
+// // When the user clicks on <span> (x), close the modal and check whether all puzzles solved
+// closeshoePuzzle.onclick = function() {
+//   shoePuzzleModal.style.display = "none";
+//   verify();
+// };
 
-function assignPositionG() {
-  //Also calls calculate function
-  isChoiceValid = checkNumber(choice);
-  if (isChoiceValid == true) {
-    positionG = choice;
-    document.getElementById("math-puzzle-g").innerHTML = choice;
-    calculateSumTotal();
-  } else {
-    invalidMessage();
-  }
-}
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == shoePuzzleModal) {
+//     shoePuzzleModal.style.display = "none";
+//   }
+// };
 
-function findEmptyPosition() {
-  //Finds the first unfilled position
-  if (positionA == undefined) {
-    assignPositionA();
-  } else if (positionB == undefined) {
-    assignPositionB();
-  } else if (positionC == undefined) {
-    assignPositionC();
-  } else if (positionD == undefined) {
-    assignPositionD();
-  } else if (positionE == undefined) {
-    assignPositionE();
-  } else if (positionG == undefined) {
-    assignPositionG();
-  } else {
-    fullMessage();
-  }
-}
+// // Begin shoe Puzzle JavaScript (not modal)
 
-//The clicked functions record button presses by user
+// // TODO Replace window.alerts with something else!
 
-function oneClicked() {
-  choice = 1;
-  findEmptyPosition();
-}
+// var positionA; //A-G store value assigned to positions in sum
+// var positionB;
+// var positionC;
+// var positionD;
+// var positionE; //F doesn't exist because = is hard wired for F.
+// var positionG;
+// var choice; //Stores value of button last pressed by user
+// var bPlus = true; //Switch to false if user selects minus for B
+// var dPlus = true; //Switch to false if user selects minus for D
+// var sumTotal; //Stores correct sum for comparison with final position
 
-function twoClicked() {
-  choice = 2;
-  findEmptyPosition();
-}
+// //Messages:
+// function invalidMessage() {
+//   document.getElementById("shoe-puzzle-message").innerHTML =
+//     "Sorry, your choice is invalid!";
+// }
 
-function threeClicked() {
-  choice = 3;
-  findEmptyPosition();
-}
+// function fullMessage() {
+//   document.getElementById("shoe-puzzle-message").innerHTML =
+//     "Sorry, there are no more positions to fill!";
+// }
 
-function fourClicked() {
-  choice = 4;
-  findEmptyPosition();
-}
+// function solvedMessage() {
+//   document.getElementById("shoe-puzzle-message").innerHTML =
+//     "Yay, you've solved this one!";
+// }
 
-function fiveClicked() {
-  choice = 5;
-  findEmptyPosition();
-}
+// function wrongMessage() {
+//   document.getElementById("shoe-puzzle-message").innerHTML =
+//     "Oh no, you got it wrong, better try again!";
+// }
 
-function sixClicked() {
-  choice = 6;
-  findEmptyPosition();
-}
+// function resetshoePuzzle() {
+//   positionA = void 0;
+//   positionB = void 0;
+//   positionC = void 0;
+//   positionD = void 0;
+//   positionE = void 0;
+//   positionG = void 0;
+//   document.getElementById("shoe-puzzle-a").innerHTML = "Number";
+//   document.getElementById("shoe-puzzle-b").innerHTML = "Sign";
+//   document.getElementById("shoe-puzzle-c").innerHTML = "Number";
+//   document.getElementById("shoe-puzzle-d").innerHTML = "Sign";
+//   document.getElementById("shoe-puzzle-e").innerHTML = "Number";
+//   document.getElementById("shoe-puzzle-g").innerHTML = "Number";
+// }
 
-function sevenClicked() {
-  choice = 7;
-  findEmptyPosition();
-}
+// function checkNumber(x) {
+//   //Returns true if x is a number 0 ≥ x ≤ 9
+//   for (var i = 0; i < 10; i++) {
+//     if (x == i) {
+//       var y = true;
+//       i = 10; //To stop loop
+//     } else {
+//       var y = false;
+//     }
+//   }
+//   return y;
+// }
 
-function eightClicked() {
-  choice = 8;
-  findEmptyPosition();
-}
+// function checkSign(x) {
+//   //Returns true if x is '+' or '-'
+//   if (x == "+" || x == "-") {
+//     var y = true;
+//   } else {
+//     var y = false;
+//   }
+//   return y;
+// }
 
-function nineClicked() {
-  choice = 9;
-  findEmptyPosition();
-}
+// //The assignPosition functions assign the user's choice to the position's var, after checking for validity.
 
-function zeroClicked() {
-  choice = 0;
-  findEmptyPosition();
-}
+// function assignPositionA() {
+//   isChoiceValid = checkNumber(choice);
+//   if (isChoiceValid == true) {
+//     positionA = choice;
+//     document.getElementById("shoe-puzzle-a").innerHTML = choice;
+//   } else {
+//     invalidMessage();
+//   }
+// }
 
-function plusClicked() {
-  choice = "+";
-  findEmptyPosition();
-}
+// function assignPositionB() {
+//   isChoiceValid = checkSign(choice);
+//   if (isChoiceValid == true) {
+//     positionB = choice;
+//     document.getElementById("shoe-puzzle-b").innerHTML = choice;
+//     if (choice == "-") {
+//       bPlus = false;
+//       //console.log(bPlus);
+//     }
+//   } else {
+//     invalidMessage();
+//   }
+// }
 
-function minusClicked() {
-  choice = "-";
-  findEmptyPosition();
-}
+// function assignPositionC() {
+//   isChoiceValid = checkNumber(choice);
+//   if (isChoiceValid == true) {
+//     positionC = choice;
+//     document.getElementById("shoe-puzzle-c").innerHTML = choice;
+//   } else {
+//     invalidMessage();
+//   }
+// }
 
-function calculateSumTotal() {
-  //Calculates correct total
-  if (bPlus == true && dPlus == true) {
-    sumTotal = positionA + positionC + positionE;
-  } else if (bPlus == true && dPlus == false) {
-    sumTotal = positionA + positionC - positionE;
-  } else if (bPlus == false && dPlus == true) {
-    sumTotal = positionA - positionC + positionE;
-  } else if (bPlus == false && dPlus == false) {
-    sumTotal = positionA - positionC - positionE;
-  }
-  endGame();
-}
+// function assignPositionD() {
+//   isChoiceValid = checkSign(choice);
+//   if (isChoiceValid == true) {
+//     positionD = choice;
+//     document.getElementById("shoe-puzzle-d").innerHTML = choice;
+//     if (choice == "-") {
+//       dPlus = false;
+//       //console.log(dPlus);
+//     }
+//   } else {
+//     invalidMessage();
+//   }
+// }
 
-function endGame() {
-  //Checks whether user is correct
-  if (sumTotal == positionG) {
-    solvedMessage();
-    mathPuzzleSolved = true; // Global var
-    //unlock 2nd lock
-    // checkPadlocks('padlock1',mathPuzzleSolved);
-    // document.querySelector('.unlocked').setAttribute('fill', "#cb0c59");
-    document.querySelector("#padlock1 .locked").style.opacity = "0";
-    document.querySelector("#padlock1 .unlocked").style.opacity = "1";
-  } else {
-    wrongMessage();
-    resetMathPuzzle();
-  }
-}
+// function assignPositionE() {
+//   isChoiceValid = checkNumber(choice);
+//   if (isChoiceValid == true) {
+//     positionE = choice;
+//     document.getElementById("shoe-puzzle-e").innerHTML = choice;
+//   } else {
+//     invalidMessage();
+//   }
+// }
 
-document
-  .getElementById("math-puzzle-one")
-  .addEventListener("click", oneClicked, false);
-document
-  .getElementById("math-puzzle-two")
-  .addEventListener("click", twoClicked, false);
-document
-  .getElementById("math-puzzle-three")
-  .addEventListener("click", threeClicked, false);
-document
-  .getElementById("math-puzzle-four")
-  .addEventListener("click", fourClicked, false);
-document
-  .getElementById("math-puzzle-five")
-  .addEventListener("click", fiveClicked, false);
-document
-  .getElementById("math-puzzle-six")
-  .addEventListener("click", sixClicked, false);
-document
-  .getElementById("math-puzzle-seven")
-  .addEventListener("click", sevenClicked, false);
-document
-  .getElementById("math-puzzle-eight")
-  .addEventListener("click", eightClicked, false);
-document
-  .getElementById("math-puzzle-nine")
-  .addEventListener("click", nineClicked, false);
-document
-  .getElementById("math-puzzle-zero")
-  .addEventListener("click", zeroClicked, false);
-document
-  .getElementById("math-puzzle-plus")
-  .addEventListener("click", plusClicked, false);
-document
-  .getElementById("math-puzzle-minus")
-  .addEventListener("click", minusClicked, false);
+// function assignPositionG() {
+//   //Also calls calculate function
+//   isChoiceValid = checkNumber(choice);
+//   if (isChoiceValid == true) {
+//     positionG = choice;
+//     document.getElementById("shoe-puzzle-g").innerHTML = choice;
+//     calculateSumTotal();
+//   } else {
+//     invalidMessage();
+//   }
+// }
 
-// End Math Puzzle JavaScript
+// function findEmptyPosition() {
+//   //Finds the first unfilled position
+//   if (positionA == undefined) {
+//     assignPositionA();
+//   } else if (positionB == undefined) {
+//     assignPositionB();
+//   } else if (positionC == undefined) {
+//     assignPositionC();
+//   } else if (positionD == undefined) {
+//     assignPositionD();
+//   } else if (positionE == undefined) {
+//     assignPositionE();
+//   } else if (positionG == undefined) {
+//     assignPositionG();
+//   } else {
+//     fullMessage();
+//   }
+// }
 
-// End Dominic Duffin - Math Puzzle
+// //The clicked functions record button presses by user
+
+// function oneClicked() {
+//   choice = 1;
+//   findEmptyPosition();
+// }
+
+// function twoClicked() {
+//   choice = 2;
+//   findEmptyPosition();
+// }
+
+// function threeClicked() {
+//   choice = 3;
+//   findEmptyPosition();
+// }
+
+// function fourClicked() {
+//   choice = 4;
+//   findEmptyPosition();
+// }
+
+// function fiveClicked() {
+//   choice = 5;
+//   findEmptyPosition();
+// }
+
+// function sixClicked() {
+//   choice = 6;
+//   findEmptyPosition();
+// }
+
+// function sevenClicked() {
+//   choice = 7;
+//   findEmptyPosition();
+// }
+
+// function eightClicked() {
+//   choice = 8;
+//   findEmptyPosition();
+// }
+
+// function nineClicked() {
+//   choice = 9;
+//   findEmptyPosition();
+// }
+
+// function zeroClicked() {
+//   choice = 0;
+//   findEmptyPosition();
+// }
+
+// function plusClicked() {
+//   choice = "+";
+//   findEmptyPosition();
+// }
+
+// function minusClicked() {
+//   choice = "-";
+//   findEmptyPosition();
+// }
+
+// function calculateSumTotal() {
+//   //Calculates correct total
+//   if (bPlus == true && dPlus == true) {
+//     sumTotal = positionA + positionC + positionE;
+//   } else if (bPlus == true && dPlus == false) {
+//     sumTotal = positionA + positionC - positionE;
+//   } else if (bPlus == false && dPlus == true) {
+//     sumTotal = positionA - positionC + positionE;
+//   } else if (bPlus == false && dPlus == false) {
+//     sumTotal = positionA - positionC - positionE;
+//   }
+//   endGame();
+// }
+
+// function endGame() {
+//   //Checks whether user is correct
+//   if (sumTotal == positionG) {
+//     solvedMessage();
+//     shoePuzzleSolved = true; // Global var
+//     //unlock 2nd lock
+//     // checkPadlocks('padlock1',shoePuzzleSolved);
+//     // document.querySelector('.unlocked').setAttribute('fill', "#cb0c59");
+//     document.querySelector("#padlock1 .locked").style.opacity = "0";
+//     document.querySelector("#padlock1 .unlocked").style.opacity = "1";
+//   } else {
+//     wrongMessage();
+//     resetshoePuzzle();
+//   }
+// }
+
+// document
+//   .getElementById("shoe-puzzle-one")
+//   .addEventListener("click", oneClicked, false);
+// document
+//   .getElementById("shoe-puzzle-two")
+//   .addEventListener("click", twoClicked, false);
+// document
+//   .getElementById("shoe-puzzle-three")
+//   .addEventListener("click", threeClicked, false);
+// document
+//   .getElementById("shoe-puzzle-four")
+//   .addEventListener("click", fourClicked, false);
+// document
+//   .getElementById("shoe-puzzle-five")
+//   .addEventListener("click", fiveClicked, false);
+// document
+//   .getElementById("shoe-puzzle-six")
+//   .addEventListener("click", sixClicked, false);
+// document
+//   .getElementById("shoe-puzzle-seven")
+//   .addEventListener("click", sevenClicked, false);
+// document
+//   .getElementById("shoe-puzzle-eight")
+//   .addEventListener("click", eightClicked, false);
+// document
+//   .getElementById("shoe-puzzle-nine")
+//   .addEventListener("click", nineClicked, false);
+// document
+//   .getElementById("shoe-puzzle-zero")
+//   .addEventListener("click", zeroClicked, false);
+// document
+//   .getElementById("shoe-puzzle-plus")
+//   .addEventListener("click", plusClicked, false);
+// document
+//   .getElementById("shoe-puzzle-minus")
+//   .addEventListener("click", minusClicked, false);
+
+// End shoe Puzzle JavaScript
+
+// End Dominic Duffin - shoe Puzzle
 
 // Kristopher Van Sant - Mirror Puzzle
 
@@ -1406,8 +1623,8 @@ window.onclick = function(event) {
     verify();
   }
 
-  if (event.target == mathPuzzleModal) {
-    mathPuzzleModal.style.display = "none";
+  if (event.target == shoePuzzleModal) {
+    shoePuzzleModal.style.display = "none";
     verify();
   }
 
@@ -1462,10 +1679,10 @@ function escapeNow() {
 // Checks whether player has solved all puzzles, if yes, escape!
 function verify() {
 
-  console.log("verifying", mathPuzzleSolved, mirrorPuzzleSolved, recursionPuzzleSolved);
+  console.log("verifying", shoePuzzleSolved, mirrorPuzzleSolved, recursionPuzzleSolved);
 
   if (
-    mathPuzzleSolved == true &&
+    shoePuzzleSolved == true &&
     mirrorPuzzleSolved == true &&
     recursionPuzzleSolved == true
   ) {
