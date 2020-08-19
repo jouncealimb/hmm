@@ -538,7 +538,6 @@ svg {
 #mirror-puzzle-container #note {
   color: var(--darkest-blue-color);
   width: 285px;
-  padding: 2%;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
