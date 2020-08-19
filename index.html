@@ -1433,7 +1433,7 @@ popIt.onclick = displayResult;
 
 
 function checkKey() {
-    if (toLowercase(this.value) !== 'hallway') {
+    if (this.value.toLowerCase() !== 'hallway') {
        popped.textContent = 'Beep... Beep...';
     }
     else {
