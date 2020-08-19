@@ -3032,78 +3032,78 @@ const generateFromParent = parent => {
   return links;
 };
 
-Vue.component("thing", {
-  props: ["data", "create", "cb"],
-  data: () => ({
-    show: false
-  }),
-  methods: {
-    createLinks: function() {
-      let self = this;
-      this.data.links = generateFromParent(this.data);
-      this.cb(this.data);
-    },
-    handle: function() {
-      if (!this.data.links.length) {
-        this.createLinks();
-      }
-      this.show = !this.show;
-    }
-  },
-  template: `
-    <div class="thing">
-      <div class="flex">
-        <div>
-          <span v-if="data.type == TYPE.EXIT"><i class="fa fa-ice-cream"></i></span>
-          <span v-else>{{data.name}}</span>
-        </div>
-        <div @click="handle" v-if="[TYPE.OBJECT, TYPE.EXIT, TYPE.THOUGHTS].indexOf(data.type) === -1">
-          <i v-if="show" class="fas fa-arrow-left"></i>
-          <i v-else class="fas fa-arrow-right"></i>
-        </div>
-      </div>
-      <div class="children" v-if="show">
-        <div v-for="c in data.links">
-          <thing :data="c" :key="c.id" :cb="cb"></thing>
-        </div>
-      </div>
-    </div>
-  `
-});
+// Vue.component("thing", {
+//   props: ["data", "create", "cb"],
+//   data: () => ({
+//     show: false
+//   }),
+//   methods: {
+//     createLinks: function() {
+//       let self = this;
+//       this.data.links = generateFromParent(this.data);
+//       this.cb(this.data);
+//     },
+//     handle: function() {
+//       if (!this.data.links.length) {
+//         this.createLinks();
+//       }
+//       this.show = !this.show;
+//     }
+//   },
+//   template: `
+//     <div class="thing">
+//       <div class="flex">
+//         <div>
+//           <span v-if="data.type == TYPE.EXIT"><i class="fa fa-ice-cream"></i></span>
+//           <span v-else>{{data.name}}</span>
+//         </div>
+//         <div @click="handle" v-if="[TYPE.OBJECT, TYPE.EXIT, TYPE.THOUGHTS].indexOf(data.type) === -1">
+//           <i v-if="show" class="fas fa-arrow-left"></i>
+//           <i v-else class="fas fa-arrow-right"></i>
+//         </div>
+//       </div>
+//       <div class="children" v-if="show">
+//         <div v-for="c in data.links">
+//           <thing :data="c" :key="c.id" :cb="cb"></thing>
+//         </div>
+//       </div>
+//     </div>
+//   `
+// });
 
-const app = new Vue({
-  el: "#app",
-  data: {
-    root: null,
-    won: false,
-    details: {
-      clicks: 0,
-      level: 0,
-      opened: 0
-    }
-  },
-  beforeMount: function() {
-    this.root = generateFromParent({ type: TYPE.DOOR_IN, links: [] }).pop();
-  },
-  methods: {
-    cb: function(data) {
-      if (data.type === TYPE.CONTAINER) {
-        this.details.opened++;
-      }
-      if (data.links.some(l => l.type === TYPE.EXIT)) {
-        this.details.level = countParents(data);
-        this.won = true;
-        recursionPuzzleSolved = true;
-        //unlock 6th padlock once puzzle is solved
-        // checkPadlocks('padlock5',recursionPuzzleSolved);
-        // document.querySelector(' .unlocked').setAttribute('fill', "#7b1346");
-        document.querySelector("#padlock5 .locked").style.opacity = "0";
-        document.querySelector("#padlock5 .unlocked").style.opacity = "1";
-      }
-      this.details.clicks++;
-    }
-  }
-});
+// const app = new Vue({
+//   el: "#app",
+//   data: {
+//     root: null,
+//     won: false,
+//     details: {
+//       clicks: 0,
+//       level: 0,
+//       opened: 0
+//     }
+//   },
+//   beforeMount: function() {
+//     this.root = generateFromParent({ type: TYPE.DOOR_IN, links: [] }).pop();
+//   },
+//   methods: {
+//     cb: function(data) {
+//       if (data.type === TYPE.CONTAINER) {
+//         this.details.opened++;
+//       }
+//       if (data.links.some(l => l.type === TYPE.EXIT)) {
+//         this.details.level = countParents(data);
+//         this.won = true;
+//         recursionPuzzleSolved = true;
+//         //unlock 6th padlock once puzzle is solved
+//         // checkPadlocks('padlock5',recursionPuzzleSolved);
+//         // document.querySelector(' .unlocked').setAttribute('fill', "#7b1346");
+//         document.querySelector("#padlock5 .locked").style.opacity = "0";
+//         document.querySelector("#padlock5 .unlocked").style.opacity = "1";
+//       }
+//       this.details.clicks++;
+//     }
+//   }
+// });
 
 // End Antoine Guillien - Recursion Puzzle
 
