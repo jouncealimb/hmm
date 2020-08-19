@@ -898,7 +898,7 @@
 
 // These variables set to true when player solves puzzle:
 // Please comment here with ✅ as triggers are added to puzzles:
-var shoePuzzleSolved = false; // ✅
+var shoepuzzleSolved = false; // ✅
 var mirrorPuzzleSolved = false; // ✅
 var recursionPuzzleSolved = false; // ✅
 
@@ -1174,7 +1174,7 @@ $(document).ready(function() {
         }
 
         if (w == 6) {
-          shoePuzzleSolved = true;
+          shoepuzzleSolved = true;
           $("#alert").html("You solved it! Happy Feet! You can close this now.");
 
           //unlock 1st padlock once puzzle is solved
@@ -1348,10 +1348,10 @@ function escapeNow() {
 // Checks whether player has solved all puzzles, if yes, escape!
 function verify() {
 
-  console.log("verifying", shoePuzzleSolved, mirrorPuzzleSolved, recursionPuzzleSolved);
+  console.log("verifying", shoepuzzleSolved, mirrorPuzzleSolved, recursionPuzzleSolved);
 
   if (
-    shoePuzzleSolved == true &&
+    shoepuzzleSolved == true &&
     mirrorPuzzleSolved == true &&
     recursionPuzzleSolved == true
   ) {
