@@ -252,9 +252,6 @@ svg {
   cursor: move;
   border: 5px solid var(--darkest-blue-color);
 }
-.tile img {
-  filter: invert(100%);
-}
 .blank {
   min-width: 116px;
   min-height: 116px;
